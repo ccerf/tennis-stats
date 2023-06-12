@@ -1,0 +1,20 @@
+<div class="card-container">
+	<div class="picture"><img [src]="player.picture" alt="Player image" /></div>
+	<div class="player-informations">
+		<h2 class="card-title">{{ player.firstname }} {{ player.lastname }}</h2>
+		<div class="stats-container">
+			<div>
+				<h3 class="card-subtitle">Rank</h3>
+				<p class="card-text">#{{ player.data.rank }}</p>
+			</div>
+			<div>
+				<h3 class="card-subtitle">Points</h3>
+				<p class="card-text">{{ player.data.points }}</p>
+			</div>
+			<div>
+				<h3 class="card-subtitle">Country</h3>
+				<p class="card-text">{{ player.country.code }}</p>
+			</div>
+		</div>
+	</div>
+</div>

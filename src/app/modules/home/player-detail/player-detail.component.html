@@ -1,0 +1,67 @@
+<div class="picture">
+	<img [src]="player.picture" alt="Player picture" />
+</div>
+<div class="dialog-container">
+	<div class="header-container">
+		<span class="material-symbols-outlined close-icon" (click)="closeDialog()"> close </span>
+	</div>
+	<div class="main-container">
+		<div class="details-container">
+			<div class="header">
+				<div class="name">
+					<h2 class="firstname">{{ player.firstname }}</h2>
+					<h2 class="lastname">{{ player.lastname }}</h2>
+				</div>
+				<div class="country">
+					<img [src]="player.country.picture" alt="Player country flag" />
+					<p>{{ player.country.code }}</p>
+				</div>
+			</div>
+			<div class="details">
+				<div class="informations">
+					<div class="row">
+						<div class="row-item">
+							<h3>RANK</h3>
+							<p>{{ player.data.rank }}</p>
+						</div>
+						<div class="row-item">
+							<h3>POINTS</h3>
+							<p>{{ player.data.points }}</p>
+						</div>
+						<div class="row-item">
+							<h3>COUNTRY</h3>
+							<p>{{ player.country.code }}</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-item">
+							<h3>BIRTHDAY</h3>
+							<p></p>
+						</div>
+						<div class="row-item">
+							<h3>AGE</h3>
+							<p>{{ player.data.age }}</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-item">
+							<h3>WEIGTH</h3>
+							<p>{{ +player.data.weight / 1000 }} kg</p>
+						</div>
+						<div class="row-item">
+							<h3>HEIGHT</h3>
+							<p>{{ player.data.height }} cm</p>
+						</div>
+					</div>
+				</div>
+				<div class="career">
+					<h3>LAST 5 GAMES</h3>
+					<ng-container *ngFor="let game of player.data.last">
+						<p *ngIf="+game === 1">WIN</p>
+						<p *ngIf="+game === 0">LOSE</p>
+					</ng-container>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

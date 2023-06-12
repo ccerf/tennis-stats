@@ -1,0 +1,16 @@
+<div class="home-container">
+	<input [(ngModel)]="searchString" class="search-input" type="text" placeholder="Rechercher un joueur" />
+	<ng-container *ngIf="players">
+		<app-card
+			*ngFor="let player of players | filteredPlayers : searchString; index as i"
+			class="cards"
+			[player]="players[i]"
+			(click)="openDetail(player)"
+		></app-card>
+	</ng-container>
+	<app-player-detail
+		*ngIf="isDetailDisplayed"
+		[player]="selectedPlayer"
+		(closeEvent)="closeDialog()"
+	></app-player-detail>
+</div>

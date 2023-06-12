@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+$black: rgba(0, 0, 0, 0.3);
+$orange: #f2753b;
+$orange-light: #ebad65;
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url("./assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+	font-family: mulish-bold;
+	src: url("./assets/fonts/Mulish-Bold.ttf");
+}
+@font-face {
+	font-family: mulish-semibold;
+	src: url("./assets/fonts/Mulish-SemiBold.ttf");
+}
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+h2,
+h3,
+p {
+	margin: 0 !important;
+}

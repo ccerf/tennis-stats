@@ -1,0 +1,49 @@
+.card-container {
+	display: flex;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+
+	.picture {
+		height: 172px;
+		width: 40%;
+		overflow: hidden;
+		position: relative;
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
+	.player-informations {
+		width: 60%;
+		.card-title {
+			display: flex;
+			font-family: "montserrat-bold", "arial", sans-serif;
+			color: #f2753b;
+			font-size: 22px;
+			height: 50%;
+			align-items: center;
+		}
+	}
+	.stats-container {
+		display: flex;
+		flex-direction: row;
+		div {
+			width: 100%;
+		}
+		.card-subtitle {
+			font-family: "mulish-bold", "arial", sans-serif;
+			color: rgba(0, 0, 0, 0.3);
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+		.card-text {
+			font-family: "montserrat-bold", "arial", sans-serif;
+			color: #f2753b;
+			font-size: 14px;
+			padding-top: 4px;
+		}
+	}
+}

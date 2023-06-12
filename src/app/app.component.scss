@@ -1,0 +1,28 @@
+@import "../styles.scss";
+
+.main-container {
+	width: 100vw;
+	min-height: 100vh;
+	background: url("../assets/images/tennis-background.jpg");
+	background-repeat: no-repeat;
+}
+
+.card-title {
+	font-family: "montserrat-bold", "arial", sans-serif;
+	color: $orange;
+}
+
+.card-subtitle {
+	font-family: "mulish-bold", "arial", sans-serif;
+	color: $black;
+}
+
+.card-text {
+	font-family: "montserrat-bold", "arial", sans-serif;
+	color: $orange;
+}
+
+.text {
+	font-family: "mulish-semibold", "arial", sans-serif;
+	color: $orange;
+}
