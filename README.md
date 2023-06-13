@@ -1,6 +1,9 @@
 # TennisStats
 
 It is a small project that displays a few Tennis players.
+![image](https://github.com/ccerf/tennis-stats/assets/120521130/3a105d94-7dc6-4abe-8f28-b744e1bcf439)
+
+
 Click on the following link to find the build application deployed here : https://atelier-tennis-stats.firebaseapp.com/
 
 ## Development server
