@@ -9,6 +9,7 @@ Click on the following link to find the build application deployed here : https:
 ## Development server
 
 Run `npm i` to install dependencies.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
