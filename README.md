@@ -1,9 +1,11 @@
 # TennisStats
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+It is a small project that displays a few Tennis players.
+Click on the following link to find the build application deployed here : https://atelier-tennis-stats.firebaseapp.com/
 
 ## Development server
 
+Run `npm i` to install dependencies.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
