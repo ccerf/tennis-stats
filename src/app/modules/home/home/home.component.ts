@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
 	}
 
 	public openDetail(player: IPlayer): void {
-		console.log(player);
 		this.isDetailDisplayed = true;
 		this.selectedPlayer = player;
 	}
@@ -36,7 +35,6 @@ export class HomeComponent implements OnInit {
 			.pipe(
 				tap((result) => {
 					this.players = result.players;
-					console.log(this.players);
 				})
 			)
 			.subscribe();

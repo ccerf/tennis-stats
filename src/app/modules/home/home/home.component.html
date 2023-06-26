@@ -4,7 +4,7 @@
 		<app-card
 			*ngFor="let player of players | filteredPlayers : searchString; index as i"
 			class="cards"
-			[player]="players[i]"
+			[player]="player"
 			(click)="openDetail(player)"
 		></app-card>
 	</ng-container>

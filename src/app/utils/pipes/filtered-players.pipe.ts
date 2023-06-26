@@ -6,10 +6,9 @@ import { IPlayer } from "src/app/modules/home/models/home.models";
 })
 export class FilteredPlayersPipe implements PipeTransform {
 	transform(players: IPlayer[], value: string): IPlayer[] {
-		value = value.toLowerCase();
-
 		return players.filter((player) => {
-			return player.firstname.toLowerCase().includes(value) || player.lastname.toLowerCase().includes(value);
+			const fullName = `${player.firstname} ${player.lastname}`;
+			return fullName.toLowerCase().includes(value.toLowerCase());
 		});
 	}
 }
