@@ -1,14 +1,12 @@
+@import "src/assets/styles/variables.scss";
 @import "../styles.scss";
-
-$black: rgba(0, 0, 0, 0.3);
-$orange: #f2753b;
-$orange-light: #ebad65;
 
 .main-container {
 	width: 100vw;
 	min-height: 100vh;
 	background: url("../assets/images/tennis-background.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .card-title {

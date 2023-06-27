@@ -1,3 +1,6 @@
+@import "src/assets/styles/mixins.scss";
+@import "src/assets/styles/variables.scss";
+
 .dialog-container {
 	z-index: 1;
 	background: rgba(0, 0, 0, 0.85);
@@ -43,16 +46,15 @@
 			display: flex;
 			justify-content: space-between;
 			.name {
+				@include title;
 				margin-top: 30px;
 				display: flex;
 				flex-direction: column;
-				font-family: "montserrat-bold", "arial", sans-serif;
-				color: #f2753b;
 				.firstname {
 					font-size: 7rem;
 					-webkit-text-fill-color: white; /* Will override color (regardless of order) */
 					-webkit-text-stroke-width: 4px;
-					-webkit-text-stroke-color: #f2753b;
+					-webkit-text-stroke-color: $orange;
 				}
 				.lastname {
 					font-size: 10rem;
@@ -66,8 +68,7 @@
 					max-height: 100%;
 				}
 				p {
-					font-family: "mulish-bold", "arial", sans-serif;
-					color: rgba(0, 0, 0, 0.3);
+					@include sub-title;
 					font-size: 4rem;
 					letter-spacing: 2rem;
 					text-align: center;
@@ -93,19 +94,6 @@
 					}
 				}
 			}
-			// .informations {
-			// 	width: 70%;
-			// 	display: grid;
-			// 	// 	.row {
-			// 	// 		display: flex;
-			// 	// 		flex-basis: 33%;
-			// 	// 		flex-direction: row;
-			// 	// 		.row-item {
-			// 	// 			flex-basis: 33%;
-			// 	// 			flex-direction: column;
-			// 	// 		}
-			// 	// 	}
-			// }
 			.career {
 				width: 25%;
 			}
@@ -114,14 +102,12 @@
 }
 
 h3 {
-	font-family: "mulish-bold", "arial", sans-serif;
-	color: rgba(0, 0, 0, 0.3);
+	@include sub-title;
 	font-size: 1.5rem;
 	padding-bottom: 1rem;
 }
 p {
-	font-family: "montserrat-bold", "arial", sans-serif;
-	color: #f2753b;
+	@include sub-text;
 	font-size: 1.5rem;
 	padding-bottom: 1rem;
 }
